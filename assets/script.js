@@ -67,8 +67,7 @@ function showPaintings() {
         container.append(writingTitle)
 
         // display the painting name
-        var paintingTitle = document.createElement("span")
-        paintingTitle.classList.add("paintingName")
+        var paintingTitle = document.createElement("span");
         paintingTitle.style.display = "none";
         paintingTitle.innerText = painting.fields.title
         container.append(paintingTitle)
@@ -100,12 +99,25 @@ function showPaintings() {
             overview.style.display = "none";
         })
 
+         //in the glossary, click on the title to view the painting
+        paintingTitle.addEventListener("click", function() {
+            if (paintingImg.style.display === "none") {
+                paintingImg.style.display = "block";
+            } else {
+                paintingImg.style.display = "none";
+            }
+            
+        })
+
         showResources.addEventListener("click", function() {
             if (container.classList.contains("author")) {
                 writingTitle.style.display = "block";
                 writingTitle.style.fontFamily = "roc-grotesk, sans-serif";
                 writingTitle.style.fontWeight = 400;
-            } else{
+                paintingImg.style.display = "none";
+                paintingTitle.style.display = "none";
+                overview.style.display = "none";
+            } else {
                 paintingImg.style.display = "none";
                 paintingTitle.style.display = "none";
                 overview.style.display = "none";
@@ -119,26 +131,22 @@ function showPaintings() {
             overview.style.display = "none";
         })
 
+        //in the gallery, click on the painting image to reveal the title
+         paintingImg.addEventListener("click", function() {
+            if (paintingTitle.style.display === "none") {
+                paintingTitle.style.display = "block";
+            } else {
+                paintingTitle.style.display = "none";
+            }
+            
+        })
+
         showInitial.addEventListener("click", function() {
             overview.style.display = "block";
             writingTitle.style.display = "none";
             paintingTitle.style.display = "none";
             paintingImg.style.display = "none";
         })
-     
-        //in the glossary, click on the title to view the painting
-        paintingTitle.addEventListener("click", function() {
-            paintingImg.style.display = "block";
-            writingTitle.style.display = "none";
-        })
-
-        //click on the painting image to reveal the title
-        paintingImg.addEventListener("click", function() {
-            paintingTitle.style.display = "block";
-            writingTitle.style.display = "none";
-        })
-
-
 
         document.querySelector(".container").append(container)
     }));
