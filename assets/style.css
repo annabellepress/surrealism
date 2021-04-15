@@ -1,0 +1,122 @@
+body {
+	font-size: 42px;
+	text-align: center;
+}
+.header {
+	position: sticky;
+	position: -webkit-sticky;
+	top: 0;
+	background: white;
+	padding: 0 20px 20px 20px;
+	text-align: center;
+}
+.container {
+	margin: 0 60px 0 60px;
+}
+#overview {
+	font-family: roc-grotesk, sans-serif;
+	font-weight: 400;
+	font-style: normal;
+	font-size: 42px;
+}
+.green {
+	color: chartreuse;
+}
+button {
+	border: none;
+	background: none;
+	outline: none;
+	font-size: 26px;
+}
+button:hover {
+	color: chartreuse;
+	transition: 0.2s all ease;
+}
+.paintingImg {
+	width: 40%;
+	margin: auto;
+	padding: 20px;
+}
+.link {
+	color: black;
+	text-decoration: none;
+}
+.link:hover {
+	color: chartreuse;
+	transition: 0.2s all ease;
+}
+.paintingName:hover {
+	color: chartreuse;
+	transition: 0.2s all ease;
+}
+/* assign different typefaces or font weight for each artist */
+.Rene_Magritte {
+	font-family: roc-grotesk, sans-serif;
+	font-weight: 500;
+}
+.Salvador_Dali {
+	font-family: roc-grotesk, sans-serif;
+	font-weight: 300;
+}
+.Leonara_Carrington {
+	font-family: cabrito-didone-extended, sans-serif;
+	font-weight: 100;
+}
+.Joan_Miroy {
+	font-family: roc-grotesk, sans-serif;
+	font-weight: 200;
+}
+.Max_Ernst {
+	font-family: cabrito-didone-extended, sans-serif;
+	font-weight: 700;
+}
+.Kay_Sage {
+	font-family: cabrito-didone-extended, sans-serif;
+	font-weight: 300;
+}
+.Yves_Tanguy {
+	font-family: roc-grotesk, sans-serif;
+	font-weight: 100;
+}
+.Remedios_Varo_Uranga {
+	font-family: cabrito-didone-extended, sans-serif;
+	font-weight: 600;
+}
+.Giorgio_de_Chirico {
+	font-family: cabrito-didone-extended, sans-serif;
+	font-weight: 200;
+}
+.Dorothea_Tanning {
+	font-family: roc-grotesk, sans-serif;
+	font-weight: 700;
+}
+.Boleslas_Biegas {
+	font-family: cabrito-didone-extended, sans-serif;
+	font-weight: 500;
+}
+.Francis_Picabia {
+	font-family: roc-grotesk, sans-serif;
+	font-weight: 600;
+}
+.Pierre_Roy {
+	font-family: roc-grotesk, sans-serif;
+	font-weight: 800;
+}
+.Valentine_Hugo {
+	font-family: cabrito-didone-extended, sans-serif;
+	font-weight: 400;
+}
+
+@media only screen and (max-width: 580px) {
+	.container {
+		margin: 0 20px 0 20px;
+	}
+	.header {
+		text-align: center;
+		margin: auto;
+	}
+	.paintingImg {
+		width: 80%;
+		margin: auto;
+	}
+}
